@@ -1,0 +1,331 @@
+
+<link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+  body{
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  #navbar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    text-align: right;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+  }
+  .nb{
+    color: white;
+    padding: 10px;
+  }
+  .nb:hover{
+    background-color: white;
+    color: black;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  #sec-1{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+  }
+  #welcome-section{
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+
+
+  }
+  #about-div1{
+    width: 70%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('https://img.helpnetsecurity.com/wp-content/uploads/2016/02/09194417/abstract-dark.png');
+    filter: grayscale(30%);
+    text-align: center;
+  }
+
+  #about-div2{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    flex-flow: column;
+
+  }
+  #profile-link{
+    background-image: url('https://repository-images.githubusercontent.com/212613049/56c08980-4ce2-11ea-98b6-9d3d404437e5');
+    background-size: cover;
+    height: 50%;
+    color: white;
+    font-size: 25px;
+    filter: grayscale(50%);
+    text-align: center;
+    transition: 0.5s ease;
+  }
+
+  #profile-link:hover{
+    border: 1px solid lightblue;
+    opacity: 0.8;
+  }
+
+
+
+  #ad2s2{
+    background-image: url('https://www.linkedin.com/media-proxy/ext?w=600&h=338&hash=MCMzuigAbSgGYlHcwKMozzZtpx8%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R65lhgP0Blv7auEuVqg91NGUYvfTGP-BjrqoorEPzT2LIGKJ_a-9kIUZyQekRs0f-_HRDjnEJG5LYPoY4Yx3sA');
+    background-size: cover;
+    height: 50%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+  #ad2s2:hover{
+    border: 1px solid lightblue;
+    opacity: 0.8;
+  }
+
+  #sec-2{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-image: url('https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2016Q4/8-steps-to-build-a-project-management-timeline@2x.png');
+
+
+
+
+  }
+
+  #projects{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+
+  }
+  #pjdiv{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .project-tile{
+    width:100%;
+
+  }
+
+  .pimg{
+    background-color: #152238;
+    width: 30%;
+    margin: 10px;
+    color: white;
+    font-family: 'Do Hyeon';
+    transition: 0.5s ease;
+  }
+  .pimg:hover{
+    border: 1px solid lightblue;
+
+  }
+
+  #sec-3{
+    width: 100%;
+    height: 700px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    background-image: url('https://miro.medium.com/max/1200/1*7HcXSzFfiOhE3J1YR6pAmg.png');
+    background-size: cover;
+
+  }
+
+  .fa{
+    background-color: black;
+    border-radius: 50%;
+    padding: 30px;
+    transition: 0.5s ease;
+  }
+  .fa:hover{
+    position: relative;
+    top: 5px;
+    opacity: 0.7;
+  }
+
+  h1,p{
+    font-family: 'Do Hyeon';
+
+  }
+  footer{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+
+  @media only screen and (max-width: 700px) {
+
+
+    #sec-1{
+    display: flex;
+      flex-flow: column;
+    width: 100%;
+    height: 100vh;
+    }
+  #welcome-section{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+  }
+  #about-div1{
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+  }
+
+  #about-div2{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    flex-flow: row;
+
+  }
+  #profile-link{
+    height: 100%;
+    width: 50%;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  #ad2s2{
+    width: 50%;
+    height: 100%;
+  }
+
+  #sec-2{
+    width: 100%;
+    height: auto;
+  }
+
+  #projects{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+
+  }
+  #pjdiv{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-tile{
+    width:100%;
+
+  }
+
+  .pimg{
+    background-color: #152238;
+    width: 100%;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+
+  #sec-3{
+    width: 100%;
+    height: auto;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+  }
+    .fa{
+    border-radius: 50%;
+    padding: 20px;
+  }
+
+  }
+
+
+</style>
+
+
+<body>
+  <div id="sec-1">
+      <div id="about-div1">
+        <section id="welcome-section"><br><br>
+          <h1>Hey I am M.S.AQMAR</h1>
+          <p><i>A Web developer</i></p>
+        </section>
+      </div>
+      <div id="about-div2">
+       <a href="https://github.com/msaqmar" id="profile-link" target="_blank"><div id="ad2s1"><section ><br><br>
+          <h1>&lt/&gtCode with me on GitHub</h1>
+          </section></div></a>
+
+        <a href="https://www.freecodecamp.org/msaqmar" id="ad2s2" target="_blank"><div ><section>
+
+          </section></div></a>
+
+      </div>
+
+    <div id="navdiv"><header>
+      <nav id="navbar">
+        <a href="#sec-1" class="nb">Home</a>
+        <a href="#projects" class="nb">Projects</a>
+        <a href="#contact" class="nb">Contact Info</a>
+
+      </nav></header>
+
+    </div>
+
+  </div>
+  <div id="sec-2">
+    <section id="projects">
+      <h1><u><i>&nbspPROJECTS&nbsp</i></u></h1>
+      <div id="pjdiv">
+        <a href="https://codepen.io/msaqmar/pen/yLYEEdK" class="pimg"><div >
+          <img src="https://imgur.com/iXDt1px.png" alt="pj1" class="project-tile">A tribute page
+          </div></a>
+        <a href="https://codepen.io/msaqmar/pen/oNjaYKP" class="pimg"><div>
+          <img src="https://imgur.com/f6h0NNq.png" alt="pj2" class="project-tile">Survey Form
+        </div></a>
+        <a href="https://codepen.io/msaqmar/pen/yLYRgYM" class="pimg"><div>
+          <img src="https://imgur.com/kYPEFhZ.png" alt="pj3" class="project-tile">Documentation
+          </div></a>
+
+      </div>
+
+    </section>
+
+  </div>
+
+      <div id="sec-3">
+        <div id="contact">
+        <h1><u><i>&nbspLets work together&nbsp</i></u></h1>
+        <p><i>Would be glad to collaborate ideas</i></p>
+        <br><br><br>
+      <a href="https://twitter.com/AqmarMs" class="fa fa-twitter" target="_blank"></a>  <a href="https://github.com/msaqmar" class="fa fa-github" target="_blank"></a>  <a href="https://www.linkedin.com/in/muhammed-sufail-aqmar-882b841a9/" class="fa fa-linkedin" target="_blank"></a>  <a href="mailto: aqmar12396@gmail.com" class="fa fa-google" target="_blank"></a>
+<br><br>
+
+
+        </div>
+
+
+
+
+      </div>
+<footer>© The page was created by M.S.Aqmar in the year 2020</footer>
+
+
+
+</body>
